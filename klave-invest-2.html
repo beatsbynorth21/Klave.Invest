@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Invest in KLAVE</title>
+<meta name="description" content="KLAVE is a marketplace for human-made beats. Talk to the founder about backing it early.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --base:#04040c;
+  --panel:#070a2e;
+  --line:#2b2b38;
+  --text:#ffffff;
+  --muted:#9b9cb4;
+  --blue:#0a34e6;
+  --blue-hi:#4a6dff;
+  --violet:#3b1f8c;
+  --display:'Syne','Arial Black',system-ui,sans-serif;
+  --mono:'Space Mono',ui-monospace,Menlo,Consolas,monospace;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--base);color:var(--text);font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;font-size:1rem;line-height:1.65}
+.wrap{max-width:680px;margin:0 auto;padding:0 1.25rem}
+header{border-bottom:1px solid var(--line)}
+header .wrap{display:flex;justify-content:space-between;align-items:center;height:72px}
+.logo{font-family:var(--display);font-weight:800;font-size:1.7rem;letter-spacing:.14em}
+.logo b{color:var(--blue-hi)}
+.chip{font-family:var(--mono);font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;color:var(--blue-hi);border:1px solid var(--blue);padding:.4rem .7rem}
+.hero{margin:1.5rem 0 0;padding:1.5rem 1.25rem 2rem;background:linear-gradient(160deg,var(--panel),#03031a 70%);border:1px solid #10164f}
+.wave{display:flex;align-items:center;gap:3px;height:88px;margin-bottom:1.5rem}
+.wave i{flex:1;min-width:2px;background:#18227a}
+.wave i.hi{background:var(--blue-hi)}
+.wave i.vi{background:var(--violet)}
+h1{font-family:var(--display);font-weight:800;font-size:clamp(1.7rem,7.2vw,2.5rem);line-height:1.12;margin:0 0 1rem}
+.lead{color:#c9cbe0;margin:0 0 1.5rem;max-width:36em}
+.btn{display:block;width:100%;background:var(--blue);color:#fff;border:0;border-radius:0;cursor:pointer;text-align:center;text-decoration:none;font-family:var(--display);font-weight:800;font-size:1rem;letter-spacing:.16em;text-transform:uppercase;padding:1.05rem 1rem;box-shadow:0 0 28px rgba(10,52,230,.45)}
+.btn:hover{background:#1443ff}
+:focus-visible{outline:3px solid var(--blue-hi);outline-offset:3px}
+section{padding:2.5rem 0 0}
+h2{font-family:var(--display);font-weight:800;font-size:1.6rem;line-height:1.1;letter-spacing:.03em;text-transform:uppercase;margin:0 0 .35rem}
+.sub{font-family:var(--mono);font-size:.85rem;color:var(--muted);letter-spacing:.08em;margin:0 0 1.25rem}
+p{margin:0 0 1rem}
+.grid{display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--line);margin:1.25rem 0}
+.grid div{padding:1.1rem .5rem;text-align:center;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
+.grid div:nth-child(2n){border-right:0}
+.grid div:nth-child(n+3){border-bottom:0}
+.grid strong{display:block;font-family:var(--display);font-weight:800;font-size:1.9rem;line-height:1.2;color:var(--blue-hi)}
+.grid span{font-family:var(--mono);font-size:.78rem;letter-spacing:.14em;color:var(--muted)}
+.list{list-style:none;margin:0;padding:0}
+.list li{border:1px solid var(--line);padding:.9rem 1rem;margin-bottom:.6rem}
+.list strong{display:block;font-family:var(--display);letter-spacing:.02em;margin-bottom:.15rem}
+.list span{color:var(--muted)}
+ol.steps{list-style:none;margin:0;padding:0;counter-reset:s}
+ol.steps li{counter-increment:s;display:flex;gap:1rem;margin-bottom:1rem}
+ol.steps li::before{content:counter(s);flex:none;width:2.2rem;height:2.2rem;border:1px solid var(--blue);color:var(--blue-hi);display:grid;place-items:center;font-family:var(--mono);font-weight:700}
+ol.steps span{color:var(--muted)}
+form{border:1px solid var(--line);padding:1.25rem;background:#070714}
+label{display:block;font-family:var(--mono);font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:0 0 .4rem}
+input,textarea{width:100%;font:inherit;color:var(--text);background:var(--base);border:1px solid var(--line);border-radius:0;padding:.8rem .9rem;margin-bottom:1rem}
+input:focus,textarea:focus{border-color:var(--blue-hi);outline:none}
+textarea{min-height:96px;resize:vertical}
+.err{color:#ff6b8a;font-family:var(--mono);font-size:.85rem;min-height:1.2rem;margin:-.4rem 0 .7rem}
+footer{margin-top:2.5rem;border-top:1px solid var(--line);padding:1.5rem 0 3rem;color:var(--muted);font-family:var(--mono);font-size:.78rem;line-height:1.7}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><span class="logo">KL<b>A</b>VE</span><span class="chip">Investors</span></div></header>
+
+<main class="wrap">
+  <div class="hero">
+    <div class="wave" id="wave" aria-hidden="true"></div>
+    <h1>Back the marketplace where beats are made by people.</h1>
+    <p class="lead">KLAVE lets producers sell beats and keep more of what they earn. Every beat is checked as human-made. I'm raising a small early round to get it to launch.</p>
+    <a class="btn" href="#talk">Talk to the founder</a>
+  </div>
+
+  <section>
+    <h2>What KLAVE is</h2>
+    <p class="sub">// a beat marketplace, built producer-first.</p>
+    <p>Producers list beats and pick a plan. The higher the plan, the smaller the cut KLAVE takes. On the lifetime plan, KLAVE takes none.</p>
+    <div class="grid">
+      <div><strong>40%</strong><span>FREE</span></div>
+      <div><strong>30%</strong><span>$7 / MONTH</span></div>
+      <div><strong>19%</strong><span>$25 / MONTH</span></div>
+      <div><strong>0%</strong><span>$299 ONCE</span></div>
+    </div>
+    <p class="sub">// royalty KLAVE takes, by producer plan.</p>
+    <ul class="list">
+      <li><strong>Human-made, verified</strong><span>Producers upload stems so buyers know a person made the beat.</span></li>
+      <li><strong>NERO, the built-in AI guide</strong><span>Helps producers and artists find their way around. Coming soon.</span></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Where things stand</h2>
+    <p class="sub">// built solo, from a phone.</p>
+    <p>The app is built and working, with live payments through Paystack. Public launch is planned before the end of 2026. I'm Benedict Patrick (Northhh), a producer and full stack developer, and I built KLAVE myself.</p>
+  </section>
+
+  <section>
+    <h2>What funding pays for</h2>
+    <p class="sub">// early money, specific jobs.</p>
+    <ul class="list">
+      <li><strong>A laptop</strong><span>App Store and Play Store submission can't be done from a phone.</span></li>
+      <li><strong>Domain and running costs</strong><span>Domain management and API payments.</span></li>
+      <li><strong>NERO</strong><span>Covering the AI running costs so it can go live.</span></li>
+      <li><strong>Launch</strong><span>Final security fixes, then getting the first producers and artists in.</span></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>How it works</h2>
+    <p class="sub">// three steps, all in one chat.</p>
+    <ol class="steps">
+      <li><div><strong>Message me on WhatsApp.</strong><br><span>Use the form below. It opens a chat with me.</span></div></li>
+      <li><div><strong>We talk it through.</strong><br><span>I answer your questions and share the terms.</span></div></li>
+      <li><div><strong>You get the agreement.</strong><br><span>If you go ahead, you make the payment in the chat, and I send you the signed document.</span></div></li>
+    </ol>
+  </section>
+
+  <section id="talk">
+    <h2>Start the conversation</h2>
+    <p class="sub">// nothing is sent until you send it in WhatsApp.</p>
+    <form id="f" novalidate>
+      <label for="name">Your name</label>
+      <input id="name" autocomplete="name" required>
+      <label for="msg">Questions (optional)</label>
+      <textarea id="msg"></textarea>
+      <div class="err" id="err" role="alert"></div>
+      <button class="btn" type="submit">Message me on WhatsApp</button>
+    </form>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    Investing in an early-stage company is risky, and you can lose all of the money you put in. This page is an invitation to talk, not an offer to the public. Terms are only shared in private conversation.
+  </div>
+</footer>
+
+<script>
+  // Change if needed. Format: country code + number, no plus or spaces.
+  var WHATSAPP_NUMBER = "2348166435486";
+
+  (function(){
+    var w = document.getElementById('wave'), seed = 7, n = 56;
+    function rnd(){ seed = (seed * 9301 + 49297) % 233280; return seed / 233280; }
+    for (var i = 0; i < n; i++){
+      var b = document.createElement('i');
+      var h = 12 + Math.sin((i / (n - 1)) * Math.PI) * 60 + rnd() * 28;
+      b.style.height = Math.min(h, 100) + '%';
+      if (i % 11 === 4) b.className = 'hi';
+      else if (i % 17 === 9) b.className = 'vi';
+      w.appendChild(b);
+    }
+  })();
+
+  document.getElementById('f').addEventListener('submit', function(e){
+    e.preventDefault();
+    var name = document.getElementById('name').value.trim();
+    var msg = document.getElementById('msg').value.trim();
+    var err = document.getElementById('err');
+    if (!name){ err.textContent = 'Enter your name so I know who is messaging.'; return; }
+    err.textContent = '';
+    var text = "Hi Benedict, I'm " + name + ". I'd like to talk about investing in KLAVE." + (msg ? "\n\n" + msg : "");
+    window.location.href = "https://wa.me/" + WHATSAPP_NUMBER + "?text=" + encodeURIComponent(text);
+  });
+</script>
+</body>
+</html>
